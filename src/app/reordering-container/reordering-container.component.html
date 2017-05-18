@@ -1,3 +1,19 @@
-<p>
-  reordering-container works!
-</p>
+  <button (click)="changeLoad('smallest')">Smallest</button>
+  <button (click)="changeLoad('small')">Small</button>
+  <button (click)="changeLoad('medium')">Medium</button>
+  <button (click)="changeLoad('large')">Large</button>
+  <button (click)="changeLoad('largest')">Largest</button>
+  <div
+    class="reordering-container-list"
+    (mousedown)="handleMouseDown($event)"
+  >
+    <app-reorderable-object *ngFor="let reorderableObject of reorderableObjects"
+      [reorderableObject]="reorderableObject"
+      (reorderableObjectDropped)="handleReorderableObjectDropped($event)"
+      (reorderableObjectMouseClick)="handleReorderableObjectMouseClick($event)"
+      (reorderableObjectMouseDown)="handleReorderableObjectMouseDown($event)"
+      (reorderableObjectOrdinalFocused)="handleReorderableObjectOrdinalFocused($event)"
+      (reorderableObjectReordinated)="handleReorderableObjectReordinated($event)"
+    >
+    </app-reorderable-object>
+  </div>

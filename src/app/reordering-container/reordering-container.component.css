@@ -1,0 +1,132 @@
+.reordering-container {
+
+}
+
+.reordering-container-title h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.reordering-container-title h5 span {
+	font-weight: normal;
+}
+
+.active-channel-info-text p {
+	font-size: 11px;
+	height: 30px;
+	text-overflow: ellipsis;
+	overflow: auto;
+}
+
+.reordering-container-list {
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	height: calc(100vh - 350px);
+	overflow-y: hidden;
+	padding: 1px 3px;
+	float: left;
+	clear: both;
+	width: 100%;
+	overflow-x: scroll;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: flex-start;
+	background-color: #FFF;
+}
+
+.reordering-container-search {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	padding-top: 4px;
+}
+
+.glyphicon.clear-search {
+	z-index: 99999;
+	position: absolute;
+	right: 64px;
+	top: 9px;
+	font-size: 13px;
+	cursor: pointer;
+	vertical-align: top !important;
+}
+
+.reordering-container-channel-sizer .input-group-btn button:nth-child(2) {
+	border-radius: 0;
+}
+
+.reordering-container-channel-sizer .input-group-btn button:first-child {
+	border-top-left-radius: 0.2rem;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0.2rem;
+	border-bottom-right-radius: 0;
+}
+
+.reordering-container-channel-sizer .input-group-btn button:last-child {
+	border-top-right-radius: 0.2rem;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0.2rem;
+	border-bottom-left-radius: 0;
+}
+
+.reordering-container-channel-finder.input-group {
+	flex: 0 0 175px;
+}
+
+.reordering-container-channel-mover.input-group {
+	flex: 0 0 190px;	
+}
+
+.reordering-container-channel-sizer {
+	flex: 0 0 82px;
+}
+
+.reordering-container-channel-finder button.btn,
+.reordering-container-channel-sizer button.btn {
+	width: 29px;
+}
+
+.reordering-container-channel-finder,
+.reordering-container-channel-mover {
+	margin-right: 15px;
+	margin-bottom: 8px;
+}
+
+.reordering-container-channel-finder.input-group-sm > .form-control,
+.reordering-container-channel-mover.input-group-sm > .form-control {
+	font-size: 12px;
+}
+
+.reordering-container-channel-sizer.input-group-sm > .input-group-btn > .btn {
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0.25rem 0.5rem;
+}
+
+.reordering-container-channel-sizer {
+	margin-right: 0px;
+	margin-bottom: 8px;
+}
+
+.reordering-container-channel-sizer button.btn {
+	margin-left: 0;
+}
+
+.reordering-container-channel-mover input.form-control {
+	border-top-left-radius: 0.2rem !important;
+	border-bottom-left-radius: 0.2rem !important;
+	width: 85px;
+}
+
+.reordering-container-channel-mover label {
+	min-width: 55px;
+}
+
+.reordering-container-channel-mover label {
+	margin-right: 8px;
+	margin-top: 6px;
+	margin-bottom: 0;
+	font-size: 13px;
+}

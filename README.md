@@ -1,5 +1,7 @@
 # Ng2EventScalingDemo
 
+A little experiment to help determine the change in time to render with trespect to he number of objects.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
 
 ## Development server

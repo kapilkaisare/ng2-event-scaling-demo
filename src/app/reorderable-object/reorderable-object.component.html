@@ -1,3 +1,36 @@
-<p>
-  reorderable-object works!
-</p>
+<div id="{{ reorderableObject.name }}"
+	class="reorderable-object"
+	draggable="true"
+	(dragstart)="handleDragStart($event)"
+	(dragend)="handleDragEnd($event)"
+>
+	<div
+		class="reorderable-object-dropbox"
+		[class.active-reorderable-object-dropbox]="dropZoneActive"
+		(dragenter)="handleDragEnter($event)"
+		(drop)="handleDrop($event)"
+		(dragover)="handleDragOver($event)"
+		(dragleave)="handleDragLeave($event)"
+	></div>
+	<div
+		class="reorderable-object-content"
+		[class.selected-reorderable-object-content]="reorderableObject.selected"
+		[class.highlighted-reorderable-object-content]="reorderableObject.highlighted"
+		[class.focused-reorderable-object-content]="reorderableObject.focused"
+		(mousedown)="handleMouseDown($event)"
+		(mouseover)="handleMouseOver($event)"
+		(click)="handleMouseClick($event)"
+	>
+		<input
+			type="text"
+			class="reorderable-object-ordinal"
+			value="{{reorderableObject.ordinal}}"
+			(mousedown)="doNotHandle($event)"
+			(blur)="handleBlur($event)"
+			(focus)="handleFocus($event)"
+			(keypress)="handleKeyPress($event)">
+		<div
+			class="reorderable-object-callsign"
+		>{{ reorderableObject.name }}</div>
+	</div>
+</div>

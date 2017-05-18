@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ReorderableObjectComponent } from './reorderable-object/reorderable-object.component';
 import { ReorderingContainerComponent } from './reordering-container/reordering-container.component';
+import { ReorderableObjectService } from './reorderable-object.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { ReorderingContainerComponent } from './reordering-container/reordering-
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ReorderableObjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
